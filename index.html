@@ -265,7 +265,7 @@
       </div>
     </section>
 
-    <section class="p-5 bg-success">
+    <section class="p-5 bg-success mb-5">
       <div class="container">
         <h2 class="text-center text-light mb-3">Our Satisfied Customers</h2>
         <p class="lead text-light text-center mb-5">
@@ -341,6 +341,67 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container-lg">
+        
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead">Questions to ask? Contact us below...</p>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            
+            <form>
+              <label for="email" class="form-label">Email address:</label>
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-envelope-fill text-secondary"></i>
+                </span>
+                <input type="text" id="email" class="form-control" placeholder="e.g. jane@example.com" />
+                <!-- tooltip -->
+                <span class="input-group-text">
+                  <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
+              <label for="name" class="form-label">Name:</label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill text-secondary"></i>
+                </span>
+                <input type="text" id="name" class="form-control" placeholder="e.g. Jane" />
+                <!-- tooltip -->
+                <span class="input-group-text">
+                  <span class="tt" data-bs-placement="bottom" title="Enter your name here">
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
+              <label for="subject" class="form-label">What is your question about?</label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                </span>
+                <select class="form-select" id="subject">
+                  <option value="pricing" selected>Pricing query</option>
+                  <option value="content">Content query</option>
+                  <option value="other">Other query</option>
+                </select>
+              </div>
+              <div class="mb-4 mt-5 form-floating">
+                <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+                <label for="query">Your question...</label>
+              </div>
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
