@@ -19,6 +19,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js" defer></script>
 
     <title>Practice project</title>
   </head>
@@ -94,6 +95,62 @@
             <button class="btn btn-dark btn-lg" type="button">Subscribe</button>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-dark text-light">
+      <div class="container">
+        <h2 class="text-center pb-2">Enter your options</h2>
+        <button class="btn btn-success d-block mx-auto">Add Option</button>
+
+        <div class="row justify-content-center pb-3">
+          <div class="col-8 col-md-6">
+            <label for="optionInput" class="form-label">Option</label>
+            <input type="text" class="form-control" id="optionInput" />
+          </div>
+
+          <div class="col-4 col-md-2">
+            <label class="form-label">Weight</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="row justify-content-center pb-3">
+          <div class="col-8 col-md-6">
+            <input type="text" class="form-control" id="optionInput" />
+          </div>
+
+          <div class="col-4 col-md-2">
+            <select class="form-select" aria-label="Default select example">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="row justify-content-center pb-3">
+          <div class="col-8 col-md-6">
+            <input type="text" class="form-control" id="optionInput" />
+          </div>
+
+          <div class="col-4 col-md-2">
+            <select class="form-select" aria-label="Default select example">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-warning btn-lg d-block mx-auto">Calculate</button>
       </div>
     </section>
 
@@ -348,24 +405,31 @@
 
     <section id="contact">
       <div class="container-lg">
-        
         <div class="text-center">
           <h2>Get in Touch</h2>
           <p class="lead">Questions to ask? Contact us below...</p>
         </div>
         <div class="row justify-content-center my-5">
           <div class="col-lg-6">
-            
             <form>
               <label for="email" class="form-label">Email address:</label>
               <div class="input-group mb-4">
                 <span class="input-group-text">
                   <i class="bi bi-envelope-fill text-secondary"></i>
                 </span>
-                <input type="text" id="email" class="form-control" placeholder="e.g. jane@example.com" />
+                <input
+                  type="text"
+                  id="email"
+                  class="form-control"
+                  placeholder="e.g. jane@example.com"
+                />
                 <!-- tooltip -->
                 <span class="input-group-text">
-                  <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                  <span
+                    class="tt"
+                    data-bs-placement="bottom"
+                    title="Enter an email address we can reply to."
+                  >
                     <i class="bi bi-question-circle text-muted"></i>
                   </span>
                 </span>
@@ -375,15 +439,26 @@
                 <span class="input-group-text">
                   <i class="bi bi-person-fill text-secondary"></i>
                 </span>
-                <input type="text" id="name" class="form-control" placeholder="e.g. Jane" />
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="e.g. Jane"
+                />
                 <!-- tooltip -->
                 <span class="input-group-text">
-                  <span class="tt" data-bs-placement="bottom" title="Enter your name here">
+                  <span
+                    class="tt"
+                    data-bs-placement="bottom"
+                    title="Enter your name here"
+                  >
                     <i class="bi bi-question-circle text-muted"></i>
                   </span>
                 </span>
               </div>
-              <label for="subject" class="form-label">What is your question about?</label>
+              <label for="subject" class="form-label"
+                >What is your question about?</label
+              >
               <div class="mb-4 input-group">
                 <span class="input-group-text">
                   <i class="bi bi-chat-right-dots-fill text-secondary"></i>
@@ -395,7 +470,12 @@
                 </select>
               </div>
               <div class="mb-4 mt-5 form-floating">
-                <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+                <textarea
+                  class="form-control"
+                  id="query"
+                  style="height: 140px"
+                  placeholder="query"
+                ></textarea>
                 <label for="query">Your question...</label>
               </div>
               <div class="mb-4 text-center">
