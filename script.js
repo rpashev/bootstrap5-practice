@@ -7,4 +7,11 @@ const addOptionHandler = () => {
   optionsDiv.append(newOption);
 };
 
+const deleteOptionHandler = (event) => {
+  if (event.target.classList.contains("btn-danger")) {
+    event.target.closest(".row").remove();
+  }
+};
+
 addOptionBtn.addEventListener("click", addOptionHandler);
+optionsDiv.addEventListener("click", deleteOptionHandler);
