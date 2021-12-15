@@ -101,55 +101,57 @@
     <section class="py-5 bg-dark text-light">
       <div class="container">
         <h2 class="text-center pb-2">Enter your options</h2>
-        <button class="btn btn-success d-block mx-auto">Add Option</button>
+        <button class="btn btn-success d-block mx-auto" id="add-option">Add Option</button>
+<div id="options">
+  <div class="row justify-content-center pb-3">
+    <div class="col-8 col-md-6">
+      <label for="optionInput" class="form-label">Option</label>
+      <input type="text" class="form-control" id="optionInput" />
+    </div>
 
-        <div class="row justify-content-center pb-3">
-          <div class="col-8 col-md-6">
-            <label for="optionInput" class="form-label">Option</label>
-            <input type="text" class="form-control" id="optionInput" />
-          </div>
+    <div class="col-4 col-md-2">
+      <label class="form-label">Weight</label>
+      <select class="form-select" aria-label="Default select example">
+        <option selected value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+  <div class="row justify-content-center pb-3" id="option-input">
+    <div class="col-8 col-md-6">
+      <input type="text" class="form-control" id="optionInput" />
+    </div>
 
-          <div class="col-4 col-md-2">
-            <label class="form-label">Weight</label>
-            <select class="form-select" aria-label="Default select example">
-              <option selected value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-        </div>
-        <div class="row justify-content-center pb-3">
-          <div class="col-8 col-md-6">
-            <input type="text" class="form-control" id="optionInput" />
-          </div>
+    <div class="col-4 col-md-2">
+      <select class="form-select" aria-label="Default select example">
+        <option selected value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+  <div class="row justify-content-center pb-3">
+    <div class="col-8 col-md-6">
+      <input type="text" class="form-control" id="optionInput" />
+    </div>
 
-          <div class="col-4 col-md-2">
-            <select class="form-select" aria-label="Default select example">
-              <option selected value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-        </div>
-        <div class="row justify-content-center pb-3">
-          <div class="col-8 col-md-6">
-            <input type="text" class="form-control" id="optionInput" />
-          </div>
-
-          <div class="col-4 col-md-2">
-            <select class="form-select" aria-label="Default select example">
-              <option selected value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-        </div>
+    <div class="col-4 col-md-2">
+      <select class="form-select" aria-label="Default select example">
+        <option selected value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+</div>
+        
         <button class="btn btn-warning btn-lg d-block mx-auto">Calculate</button>
       </div>
     </section>
